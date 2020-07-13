@@ -42,6 +42,10 @@ module LinkedList
     end
   end
 
+  def empty?
+    self.head.nil?
+  end
+
   private
 
   def get_node(index)
