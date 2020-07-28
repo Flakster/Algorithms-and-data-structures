@@ -6,10 +6,6 @@ end
 def move_disks(n, start, intermediate, goal)
   if n==1
     puts move_text(start,goal)
-  elsif n==2
-    puts move_text(start,intermediate)
-    puts move_text(start,goal)
-    puts move_text(intermediate,goal)
   else
     move_disks(n-1,start,goal,intermediate)
     move_disks(1,start, intermediate, goal)
@@ -20,6 +16,8 @@ end
 def move_text(from,to)
   "#{from}->#{to}"
 end
+
+hanoi_steps(3)
 
 #hanoi_steps(2)
 # => 1->2 
@@ -35,7 +33,7 @@ end
 #    2->3
 #    1->3
 
-hanoi_steps(4)
+#hanoi_steps(4)
 # => 1->2
 #    1->3
 #    2->3
