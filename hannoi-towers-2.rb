@@ -17,7 +17,7 @@ def move_text(from,to)
   "#{from}->#{to}"
 end
 
-hanoi_steps(3)
+hanoi_steps(100)
 
 #hanoi_steps(2)
 # => 1->2 
