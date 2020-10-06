@@ -25,15 +25,16 @@ def solve()
     (0..8).each do |c|
       if $board[r][c] == '.'
         (1..9).each do |n|
-          p "chequeando si #{n} es posible en #{r},#{c}"
+          p "checking if #{n} is possible in #{r},#{c}"
            if possible(r,c,n.to_s)
              $board[r][c] = n.to_s
              solve()
-          #   #$board[r][c] = '.'
+             $board[r][c] = '.'
            end
         end
+        display()
+        return
       end
-      #return
     end    
   end
 end
