@@ -1,3 +1,8 @@
+# In this challenge, a tree is height-balanced 
+# if the maximum and minimum path from any node 
+# to a terminal (null node) descendant differs by at most 1.
+
+
 class Node
   attr_accessor :left, :right
   attr_reader :data
@@ -24,5 +29,15 @@ def tree_height(node, h = 0)
   return [tree_height(node.left,h), tree_height(node.right,h)].max
 end
 
+def is_balanced?(node)
+  return true if node.nil?
 
-p tree_height(array_to_tree([1,2,3,4,5,6]))
+  return false if tree_height(node.left) - tree_height(node.right) > 1
+
+  is_balanced?(node.left) && is_balanced?(node.right)
+
+end
+
+
+p is_balanced?(array_to_tree([1, 2, 0, 3, 4, 0, 0]))
+p is_balanced?(array_to_tree([1, 2, 3, 4, 5, 6, 7]))

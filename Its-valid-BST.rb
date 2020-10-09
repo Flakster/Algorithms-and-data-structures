@@ -25,7 +25,9 @@ def search_tree?(array)
 end
 
 def traverse(node, min = nil, max = nil)
+  return false if defined?(node.val).nil?
   return true if node.nil?
+  return false if node.data.nil?
     
   return false if min && node.data < min
 
@@ -41,3 +43,5 @@ puts search_tree?([10, 5, 7])
 # => false
 
 puts search_tree?([20, 10, 27, 12, 14, 23, 30])
+null = nil
+puts search_tree?([1,null,1])
