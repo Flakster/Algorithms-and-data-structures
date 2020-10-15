@@ -5,7 +5,7 @@ def graph(hash_graph)
   while stack.length > 0 do
     current = stack.last
     return visited if current == 4
-      
+
     next_node = get_next(hash_graph[current], visited)
     if next_node.negative?
       stack.pop
@@ -39,6 +39,4 @@ hash = {
 }
 
 p graph(hash)
-# => [0, 2, 5, 4]
-
 # => [0, 2, 5, 4]
