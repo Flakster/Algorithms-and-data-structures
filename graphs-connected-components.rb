@@ -9,6 +9,12 @@ def traverse(graph)
   return visited
 end
 
+def connected?(graph)
+  arr1 = traverse(graph)
+  arr2 = graph.keys
+  arr1.length == arr2.length && arr1 - arr2 == []
+end
+
 
 graph = {
   0 => [2], 
@@ -21,4 +27,4 @@ graph = {
 
 #p graph.keys
 
- p traverse(graph)
+p connected?(graph)
