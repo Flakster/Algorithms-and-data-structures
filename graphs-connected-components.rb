@@ -3,6 +3,7 @@ def traverse(graph)
   visited = []
   while queue.length > 0 do
     queue += graph[queue[0]] - visited
+    p queue
     queue.uniq!
     visited << queue.shift
   end
