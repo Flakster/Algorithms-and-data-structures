@@ -25,6 +25,4 @@ graph = {
   5 => [4, 2, 3]
 }
 
-#p graph.keys
-
 p connected?(graph)
