@@ -4,7 +4,7 @@ def getMoneySpent(keyboards, drives, b)
   keyboards.each do |k|
     if k < b
       drives.each do |d|
-        if k + d < b && k + d > max
+        if k + d <= b && k + d > max
           max = k + d
         end
       end
