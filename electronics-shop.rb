@@ -12,3 +12,6 @@ def getMoneySpent(keyboards, drives, b)
   end
   max
 end
+
+p getMoneySpent([3,1],[5, 2, 8],10)
+#=> 9
