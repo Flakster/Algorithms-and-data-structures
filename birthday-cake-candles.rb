@@ -10,3 +10,7 @@ p birthdayCakeCandles([1,2,3,3,3,3])
 p birthdayCakeCandles([1,2,3,3,3,3,4])
 #=>1
 
+p birthdayCakeCandles([3, 2, 1, 3])
+#=>2
+
+
