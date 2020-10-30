@@ -11,3 +11,5 @@ def howManyGames(p, d, m, s)
   end
   amount
 end
+
+p howManyGames(20, 3, 6, 80)
