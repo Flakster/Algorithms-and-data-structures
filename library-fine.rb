@@ -4,3 +4,5 @@ def libraryFine(d1, m1, y1, d2, m2, y2)
   return (d1 - d2) * 15 if (d1 - d2).positive?
   0
 end
+
+p libraryFine(9,6,2015,6,6,2015)
