@@ -9,3 +9,6 @@ end
 
 p pageCount(5,3)
 #=> 1
+
+p pageCount(6,2)
+#=> 1
