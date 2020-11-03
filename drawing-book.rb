@@ -12,3 +12,6 @@ p pageCount(5,3)
 
 p pageCount(6,2)
 #=> 1
+
+p pageCount(5,4)
+#=> 0
