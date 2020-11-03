@@ -6,3 +6,6 @@ def pageCount(n, p)
   tl = n.even? ? (n + 1 - p) / 2 : (n - p) / 2
   [tr,tl].min
 end
+
+p pageCount(5,3)
+#=> 1
