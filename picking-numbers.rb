@@ -6,7 +6,7 @@ def pickingNumbers(a)
   end
   last = -1
   return myHash[myHash.keys[0]] if myHash.length == 1
-  max = 0
+  max = myHash.values.max
   myHash.keys.sort.each do |e|
     if last > 0
       if e - last <= 1 && myHash[e] + myHash[last] > max
