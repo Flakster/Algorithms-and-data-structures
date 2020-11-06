@@ -4,3 +4,6 @@ end
 
 p find_digits(12)
 #=> 2
+
+p find_digits(1012)
+#=> 3
