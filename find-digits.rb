@@ -1,5 +1,5 @@
-def find_digits(num)
-  num.to_s.split('').map(&:to_i).count{|e| !e.zero? && (num % e).zero?}
+def find_digits(n)
+  n.to_s.split('').map(&:to_i).count{|e| !e.zero? && (n % e).zero?}
 end
 
 p find_digits(12)
