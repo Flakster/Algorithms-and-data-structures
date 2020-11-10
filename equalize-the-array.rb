@@ -12,3 +12,6 @@ end
 
 p equalizeArray([1, 2, 2, 3])
 #=> 2
+
+p equalizeArray([3, 3, 2, 1, 3])
+#=> 2
