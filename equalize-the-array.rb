@@ -1,0 +1,4 @@
+def equalizeArray(arr)
+
+
+end
