@@ -9,3 +9,6 @@ def equalizeArray(arr)
   end
   arr.length - freq_hash.values.max
 end
+
+p equalizeArray([1, 2, 2, 3])
+#=> 2
