@@ -19,8 +19,10 @@ def encryption(s)
         print arr2[r][c]
       end
     end
+    if  c < cols-1
+      print ' '
+    end
   end
 end
-
 
 encryption('chillout')
