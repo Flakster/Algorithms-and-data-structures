@@ -13,8 +13,14 @@ def encryption(s)
   if arr.length > 0
     arr2 << arr
   end
-  arr2
+  (0..cols-1).each do |c|
+    (0..rows-1).each do|r|
+      if (r+1)*(c+1) <= strLength
+        print arr2[r][c]
+      end
+    end
+  end
 end
 
 
-p encryption('chillout')
+encryption('chillout')
