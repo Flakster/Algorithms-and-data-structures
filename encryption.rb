@@ -1,0 +1,4 @@
+def encryption(s)
+  
+
+end
