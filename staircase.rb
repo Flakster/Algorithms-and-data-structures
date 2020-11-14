@@ -11,3 +11,6 @@ def staircase(n)
     puts
   end
 end
+
+staircase(6)
+#=> 6
