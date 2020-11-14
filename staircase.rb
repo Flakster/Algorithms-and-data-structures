@@ -15,3 +15,5 @@ end
 staircase(6)
 
 staircase(0)
+
+staircase(100)
