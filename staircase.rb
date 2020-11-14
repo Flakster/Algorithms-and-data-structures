@@ -1,0 +1,4 @@
+def staircase(n)
+
+
+end
