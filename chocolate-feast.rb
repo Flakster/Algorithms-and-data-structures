@@ -11,3 +11,6 @@ def chocolateFeast(n, c, m)
   end
   total
 end
+
+p chocolateFeast(10, 2, 5)
+#=>6
