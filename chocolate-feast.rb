@@ -14,3 +14,6 @@ end
 
 p chocolateFeast(10, 2, 5)
 #=>6
+
+p chocolateFeast(12, 4, 4)
+#=>3
