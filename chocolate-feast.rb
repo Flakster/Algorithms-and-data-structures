@@ -1,12 +1,13 @@
 def chocolateFeast(n, c, m)
   total = 0
-  num = n/c
-  total += num
-  remainder = 0
-  while num + remainder >= m do
-    num = (num + remainder) / m
-    remainder = (num + remainder) % m 
-    total +=num
+  total += n/c
+  wraps = total
+  remainding_wraps = 0
+  while wraps + remainding_wraps >= m do
+    aux = (wraps + remainding_wraps) / m
+    remainding_wraps= wraps + remainding_wraps - aux * m
+    total += aux
+    wraps = aux 
   end
   total
 end
