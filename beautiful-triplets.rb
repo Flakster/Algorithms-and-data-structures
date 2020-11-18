@@ -16,3 +16,6 @@ end
 
 p beautifulTriplets(1, [2, 2, 3, 4, 5])
 #=> 3
+
+p beautifulTriplets(3, [1, 2, 4, 5, 7, 8, 10])
+#=> 3
