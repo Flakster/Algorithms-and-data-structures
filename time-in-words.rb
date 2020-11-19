@@ -52,3 +52,6 @@ def timeInWords(h, m)
     return "#{string} to #{num[h+1]}"
   end
 end
+
+p timeInWords(5,47)
+#=> thirteen minutes to six
