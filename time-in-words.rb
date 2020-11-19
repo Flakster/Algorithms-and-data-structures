@@ -58,3 +58,6 @@ p timeInWords(5,47)
 
 p timeInWords(3,0)
 #=> three o' clock
+
+p timeInWords(7,15)
+#=> quarter past seven
