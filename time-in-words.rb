@@ -55,3 +55,6 @@ end
 
 p timeInWords(5,47)
 #=> thirteen minutes to six
+
+p timeInWords(3,0)
+#=> three o' clock
