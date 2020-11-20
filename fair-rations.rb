@@ -21,3 +21,6 @@ def fairRations(b)
   end
   loaves
 end
+
+p fairRations([2, 3, 4, 5, 6])
+#=> 4
