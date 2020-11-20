@@ -24,3 +24,6 @@ end
 
 p fairRations([2, 3, 4, 5, 6])
 #=> 4
+
+p fairRations([1, 2])
+#=> NO
