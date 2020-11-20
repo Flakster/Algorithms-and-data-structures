@@ -19,7 +19,7 @@ def fairRations(b)
       end
     end
   end
-  loaves
+  return loaves
 end
 
 p fairRations([2, 3, 4, 5, 6])
