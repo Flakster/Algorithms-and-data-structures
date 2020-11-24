@@ -20,7 +20,7 @@ def cavityMap(grid)
     end
     result << arr.join('')
   end
-  return result
+  result
 end
 
 p cavityMap([
