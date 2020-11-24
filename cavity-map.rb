@@ -10,7 +10,7 @@ def cavityMap(grid)
         lo = grid[row+1].slice(col,1)
         pr = arr[col-1]
         nx = arr[col+1]
-        if up == 'X' || lo == 'X' || pr == 'X' || nx =='X'
+        if up == 'X' || lo == 'X' || pr == 'X' || nx == 'X'
           next
         end
         if chr.to_i > up.to_i && chr.to_i > lo.to_i && chr.to_i > pr.to_i && chr.to_i > nx.to_i
