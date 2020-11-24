@@ -8,3 +8,6 @@ def find_duplicate(nums)
       end
     end
 end
+
+p find_duplicate([1, 2, 3, 4, 5, 1, 6, 7, 8, 9])
+#=>1
