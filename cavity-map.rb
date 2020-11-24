@@ -3,7 +3,7 @@ def cavityMap(grid)
   grid.each_with_index do | str, row |
     arr = str.split('') 
     arr.each_with_index do |chr, col|
-      if row.zero? || col.zero? || row == grid.length-1 or col ==grid.length-1
+      if row.zero? || col.zero? || row == grid.length-1 or col == grid.length-1
         next
       else
         up = grid[row-1].slice(col,1)
