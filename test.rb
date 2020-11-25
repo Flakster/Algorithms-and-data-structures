@@ -1,1 +1,0 @@
-"carlos".split('').each {|e| p e }
