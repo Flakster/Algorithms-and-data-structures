@@ -42,7 +42,7 @@ def add_two_numbers(l1, l2)
     current.next = last
     current = last
   end
-  return result
+  result
 end
 
 l1 = ListNode.new(2)
