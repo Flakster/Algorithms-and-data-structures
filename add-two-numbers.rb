@@ -19,5 +19,28 @@ def add_two_numbers(l1, l2)
     carry = true
   end
   result = ListNode.new(first_value)
-  
+  current = result
+  node1 = node1.next
+  node2 = node2.next
+  while !node1.nil? || !node2.nil? || carry
+    sum = 0
+    sum += 1 if carry
+    carry = false
+    unless node1.nil?
+      sum += node1.val
+      node1 = node1.next
+    end
+    unless node2.nil?
+      sum += node2.val
+      node2 = node2.next
+    end
+    if sum > 9
+      sum -= 10
+      carry = true
+    end
+    last = ListNode.new(sum)
+    current.next = last
+    current = last
+  end
+  return result
 end
