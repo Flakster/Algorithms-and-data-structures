@@ -17,6 +17,8 @@ def workbook(n, k, arr)
   return result
 end
 
-p workbook(5, 3,  [4, 2, 6, 1, 10])
-    
+p workbook(5, 3,  [4, 2, 6, 1, 10])    
 #=> 4
+
+p workbook(10, 5, [3, 8, 15, 11, 14, 1, 9, 2, 24, 31])
+#=> 8
