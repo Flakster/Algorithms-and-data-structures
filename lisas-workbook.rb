@@ -14,7 +14,7 @@ def workbook(n, k, arr)
       end
     end
   end
-  return result
+  result
 end
 
 p workbook(5, 3,  [4, 2, 6, 1, 10])    
