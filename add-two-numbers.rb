@@ -22,7 +22,7 @@ def add_two_numbers(l1, l2)
   current = result
   node1 = node1.next
   node2 = node2.next
-  while !node1.nil? || !node2.nil? || carry
+  while !!node1 || !!node2 || carry
     sum = 0
     sum += 1 if carry
     carry = false
