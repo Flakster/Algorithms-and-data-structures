@@ -44,3 +44,21 @@ def add_two_numbers(l1, l2)
   end
   return result
 end
+
+l1 = ListNode.new(2)
+current = l1
+last = ListNode.new(4)
+current.next = last
+current = last
+last = ListNode.new(3)
+current.next = last
+
+l2 = ListNode.new(5)
+current = l2
+last = ListNode.new(6)
+current.next = last
+current = last
+last = ListNode.new(4)
+current.next = last
+
+p add_two_numbers(l1, l2)
