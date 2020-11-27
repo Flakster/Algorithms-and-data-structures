@@ -16,3 +16,7 @@ def workbook(n, k, arr)
   end
   return result
 end
+
+p workbook(5, 3,  [4, 2, 6, 1, 10])
+    
+#=> 4
