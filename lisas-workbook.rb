@@ -1,16 +1,22 @@
 def workbook(n, k, arr)
   result = 0 
-  page = 1
+  page = 0
+  complete = false
   arr.each do |problems|
     number = 1 # number of problem in the page
     problem = 1
+    page +=1 unless complete
     while problem <= problems
+      p "problem #{problem} number in page #{number} page Number #{page}"
       result += 1 if problem == page
       problem +=1
       number +=1
       if number > k
         page += 1
         number = 1
+        complete = true
+      else
+        complete = false
       end
     end
   end
