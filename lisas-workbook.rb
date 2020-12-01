@@ -7,7 +7,6 @@ def workbook(n, k, arr)
     problem = 1
     page +=1 unless complete
     while problem <= problems
-      p "problem #{problem} number in page #{number} page Number #{page}"
       result += 1 if problem == page
       problem +=1
       number +=1
