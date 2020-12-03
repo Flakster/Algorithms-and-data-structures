@@ -1,18 +1,16 @@
 def stones(n, a, b)
-  arr1 = [0]
+  arr = [0]
   i = 1
   while i < n
-    p i
-    arr2 =[]
-    arr1.each do |e|
-      arr2 << e + a
-      arr2 << e + b
+    hash = {}
+    arr.each do |e|
+      hash[e + a] = true
+      hash[e + b] = true
     end
-    arr2.uniq!
-    arr1 = arr2
+    arr = hash.keys
     i += 1
   end
-  arr2.sort
+  hash.keys.sort
 end
 
 p stones(58,69,24)
