@@ -15,3 +15,4 @@ def stones(n, a, b)
   arr2.sort
 end
 
+p stones(58,69,24)
