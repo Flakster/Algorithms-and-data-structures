@@ -15,7 +15,6 @@ def getUsernames(threshold)
     data = results['data']
     while data.length > 0 
       data.each do |e|
-        p "pag: #{page} id: #{e['id']} username: #{e['username']} sub. count: #{e['submission_count']}"
         arr << e['username'] if e['submission_count'] > threshold
       end
       page += 1
