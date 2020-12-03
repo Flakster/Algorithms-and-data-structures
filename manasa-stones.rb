@@ -1,0 +1,2 @@
+def stones(n)
+end
