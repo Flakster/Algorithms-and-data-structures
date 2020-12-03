@@ -26,3 +26,5 @@ def getUsernames(threshold)
     end
     return arr
 end
+
+p getUsernames(10)
