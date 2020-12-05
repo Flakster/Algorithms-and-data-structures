@@ -16,5 +16,5 @@ def encryption(s)
     word << ' ' unless word[-1] == ' '
     result << word.join('')
   end
-  return result.join('')
+  result.join('')
 end
