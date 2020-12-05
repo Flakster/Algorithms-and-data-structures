@@ -18,3 +18,5 @@ def encryption(s)
   end
   result.join('')
 end
+
+p encryption('chillout')
