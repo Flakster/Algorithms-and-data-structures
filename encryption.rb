@@ -1,4 +1,5 @@
 def encryption(s)
+  result = []
   strLength = s.length
   cols = Math.sqrt(strLength).ceil
   rows = Math.sqrt(strLength).floor
@@ -25,4 +26,4 @@ def encryption(s)
   end
 end
 
-encryption('chillout')
+encryption('relajate pedazo de coromoto')
