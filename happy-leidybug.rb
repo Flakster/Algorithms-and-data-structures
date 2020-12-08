@@ -29,5 +29,7 @@ def happyLadybugs(b)
     end
   end
   return 'YES'
-
 end
+
+p happyLadybugs('G')
+#=> 'NO'
