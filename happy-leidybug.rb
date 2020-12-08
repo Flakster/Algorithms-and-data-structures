@@ -1,14 +1,33 @@
 def happyLadybugs(b)
+  return 'YES' if b.length.zero?
   freq = {}
-  b.split('').each do |e|
-    freq[e] = freq[e].nil? ? 1 : freq[e] += 1 
+  arr = b.split('')
+  last = arr[0]
+  single = false
+  count = 0
+  arr.each_with_index do |e,i|
+    freq[e] = freq[e].nil? ? 1 : freq[e] += 1
+    if i > 0
+      if e == arr[i-1]
+        count += 1
+      elsif count.zero? || i == arr.length-1
+        single = true
+      else
+        count = 0
+      end
+    end 
   end
+  return 'YES' unless single
+  return 'NO' if freq['_'].nil?
   freq.keys.each do |k|
     if k == '_'
-      return 'NO' if freq[k] < 1
+      next
     else
       return 'NO' if freq[k] < 2
     end
   end
   return 'YES'
 end
+
+#p happyLadybugs('BBRRYY')AABBC
+p happyLadybugs('RRGGBBXY')
