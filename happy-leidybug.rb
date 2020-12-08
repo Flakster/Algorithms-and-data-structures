@@ -33,3 +33,6 @@ end
 
 p happyLadybugs('G')
 #=> 'NO'
+
+p happyLadybugs('BBRRYY')
+#=> 'YES'
