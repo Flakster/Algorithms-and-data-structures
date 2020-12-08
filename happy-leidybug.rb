@@ -28,7 +28,7 @@ def happyLadybugs(b)
       return 'NO' if freq[k] < 2
     end
   end
-  return 'YES'
+  'YES'
 end
 
 p happyLadybugs('G')
