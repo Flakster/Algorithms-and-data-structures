@@ -8,9 +8,5 @@ def gameOfThrones(s)
     end
   end
   singles = my_hash.keys.count - my_hash.values.count{|e| e.even?}
-  singles > 1
-    return "NO" 
-  else
-    return "YES"
-  end
+  singles > 1 ? "NO" : "YES"
 end
