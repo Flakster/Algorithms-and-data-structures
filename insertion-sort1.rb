@@ -9,11 +9,10 @@ def insertion_sort(array)
         puts array.join(' ')
         array[index] = element
       end
-      index -= 1
     else
       array[index + 1] = element
-      index = -1
     end
+    index -= 1
     puts array.join(' ')
   end
 end
