@@ -6,7 +6,7 @@ def insertionSort2(n, arr)
       if arr[index] > arr[e]
         arr[index] = num 
       else
-        arr[index] = arr[index+1]
+        arr[index] = arr[index-1]
         break
       end
       index -= 1
