@@ -1,18 +1,17 @@
 def insertionSort2(n, arr)
   (1..n-1).each do |e|
     num = arr[e]
-    index = e - 1
-    while index >= 0
-      if arr[index] < num
-        arr[index-1] = num
-        break 
+    i = e - 1
+    while i >= 0
+      if num < arr[i]
+        arr[i + 1] = arr[i]
+        arr[i] = num if i.zero?
       else
-        arr[index+1] = arr[index]
+        arr[i+1] = num
+        break
       end
-      index -= 1
+      i -= 1
     end
-    p arr
+    print arr.join(' ')
   end
 end
-
-insertionSort2(4, [3,4,1,2])

@@ -6,15 +6,16 @@ def insertion_sort(array)
     if array[index] > element
       array[index + 1] = array[index]
       if index.zero?
-        puts array.join(' ')
         array[index] = element
       end
     else
       array[index + 1] = element
+      break
     end
     index -= 1
     puts array.join(' ')
   end
+  puts array.join(' ')
 end
 
-insertion_sort([2, 3, 4, 5, 6, 7, 8, 9, 10, 1])
+insertion_sort([1, 2])
