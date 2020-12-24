@@ -3,15 +3,15 @@ def insertionSort2(n, arr)
     num = arr[e]
     index = e - 1
     while index >= 0
-      if arr[index] > arr[e]
-        arr[index] = num 
+      if arr[index] < num
+        arr[index-1] = num
+        break 
       else
-        arr[index] = arr[index-1]
-        break
+        arr[index+1] = arr[index]
       end
       index -= 1
-      p arr
     end
+    p arr
   end
 end
 
