@@ -8,4 +8,5 @@ $primes = Set.new(2..10000)
 end
 
 def number_of_primes(arr)
+  arr.count{|e| $primes.include?(e)}
 end
