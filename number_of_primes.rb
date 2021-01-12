@@ -13,3 +13,6 @@ end
 
 puts number_of_primes([2, 3, 5, 6, 9])
 # => 3
+
+puts number_of_primes([121, 17, 21, 29, 11, 341, 407, 19, 119, 352])
+# => 4
