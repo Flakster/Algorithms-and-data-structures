@@ -10,3 +10,6 @@ end
 def number_of_primes(arr)
   arr.count{|e| $primes.include?(e)}
 end
+
+puts number_of_primes([2, 3, 5, 6, 9])
+# => 3
