@@ -6,3 +6,6 @@ $primes = Set.new(2..10000)
     $primes.delete(i*j)
   end
 end
+
+def number_of_primes(arr)
+end
