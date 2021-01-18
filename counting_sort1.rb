@@ -12,3 +12,5 @@ def counting_sort(arr)
   end
   sorted
 end
+
+p counting_sort([4,3,5,2,6,1])
