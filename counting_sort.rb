@@ -3,4 +3,5 @@ def counting_sort(array)
   (0..99).each do |e|
     count << array.count(e)
   end
+  return count
 end
