@@ -1,5 +1,6 @@
 def counting_sort(array)
   count = []
+  fhash = {}
   (0..99).each do |e|
   end
 end
