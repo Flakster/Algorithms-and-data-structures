@@ -2,6 +2,7 @@ def counting_sort(array)
   count = []
   fhash = {}
   (0..99).each do |e|
+    fhash[e] = array.count(e)
   end
 end
 
