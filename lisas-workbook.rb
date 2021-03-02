@@ -3,7 +3,7 @@ def workbook(n, k, arr)
   page = 0
   complete = false
   arr.each do |problems|
-    number = 1 # number of problem in the page
+    number = 1
     problem = 1
     page +=1 unless complete
     while problem <= problems
