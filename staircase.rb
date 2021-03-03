@@ -16,4 +16,4 @@ staircase(6)
 
 staircase(0)
 
-staircase(100)
+staircase(50)
