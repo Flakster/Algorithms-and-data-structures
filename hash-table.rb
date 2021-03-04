@@ -1,6 +1,5 @@
 
 def hash_table(arr)
-  # write your code here
   aux = []
   result = []
   arr.each do |e|
