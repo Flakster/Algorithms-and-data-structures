@@ -1,6 +1,6 @@
 
 def howManyGames(p, d, m, s)
-  # Return the number of games you can buy
+  # Return the number of games you can buy (hackerrank)
   remaining = s
   current = p
   amount = 0
