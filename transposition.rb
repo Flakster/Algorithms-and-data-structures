@@ -16,7 +16,7 @@ def transpose(string)
   end
   n.times { output << 'n' }
   g.times { output << 'g' }
-  return output
+  output
 end
 
 #transpose('he was searchign on Bign for signign kigns')
