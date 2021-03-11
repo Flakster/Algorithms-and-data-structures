@@ -24,7 +24,7 @@ def get_next(adjacent, visited)
       return e
     end
   end
-  return -1
+  -1
 end
 
 
