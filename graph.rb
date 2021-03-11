@@ -13,7 +13,7 @@ def graph(hash_graph)
       stack << next_node
     end
   end
-  return 'Not found'
+  'Not found'
 end
 
 def get_next(adjacent, visited)
