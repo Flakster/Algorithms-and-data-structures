@@ -1,6 +1,5 @@
 def graph(hash_graph)
-  # write your code here
-  visited = [0]
+    visited = [0]
   stack = [0]
   while stack.length > 0 do
     current = stack.last
