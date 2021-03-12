@@ -3,7 +3,6 @@ def sqrt(number)
 end
 
 def sqrt_recursive(number, min_interval, max_interval)
-  # Your code here
   guess = (min_interval + max_interval)  / 2
   return guess if guess * guess == number
   (guess * guess) < number ? sqrt_recursive(number, guess, max_interval) : sqrt_recursive(number, min_interval,guess)
