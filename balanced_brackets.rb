@@ -1,7 +1,6 @@
 require './stack.rb'
 
 def balanced_brackets?(string)
-  # your code here
   brackets = Stack.new
   string.split('').each do |c| 
     case c
