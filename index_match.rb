@@ -1,5 +1,4 @@
 def index_match(array)
-  # write your code here
   min = 0
   max = array.length - 1
   pivot = max / 2
