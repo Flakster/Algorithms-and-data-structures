@@ -1,5 +1,4 @@
 def appears_most_times(array)
-  # write your code here
   myhash = {}
   array.each do |e|
     if myhash[e].nil?
