@@ -9,18 +9,21 @@ def getCandidates(board, row, col)
         break
       end
     end
+    candidates << chr unless collision
   end
+  return candidates
 end
 
 def sudokuSolve(board)
   row = -1
   col = -1
+  candidates = nil
 
   (0..8).each do |r|
     (0..8).each do |c|
       if board[r][c] == '.'
         newCandidates = getCandidates(board, r, c)
-        if candidates.nil? || newCandidates.size < candidates.size
+        if candidates.nil? || newCandidates.length < candidates.length
           candidates = newCandidates 
           row = r
           col = c
@@ -32,11 +35,13 @@ def sudokuSolve(board)
   return true if candidates.nil?
 
   candidates.each do |val|
-    board[r][c] = val
-    if sudokuSolve[board]
+    board[row][col] = val
+    if sudokuSolve(board)
+      puts
+      display(board)
       return true
     else
-      board[r][c] = '.'
+      board[row][col] = '.'
     end
   end
 
@@ -48,16 +53,15 @@ end
 
 # $board = Array.new(9) {Array.new(9){ '.' }}
 $board = [
-  ['8','.','.','6','.','.','.','4','2'],
-  ['.','.','9','.','5','8','.','.','.'],
-  ['6','.','.','.','2','.','.','8','.'],
-  ['.','8','.','.','.','9','5','7','.'],
-  ['4','3','.','5','.','.','.','.','.'],
-  ['.','5','.','7','.','6','.','.','4'],
-  ['.','.','8','.','1','.','3','.','6'],
-  ['.','.','4','.','6','2','.','.','.'],
-  ['7','.','1','3','.','.','4','.','.'],
+  ['.','.','.','.','4','.','.','.','.'],
+  ['.','1','4','.','.','.','.','.','6'],
+  ['.','.','2','9','.','3','.','.','.'],
+  ['2','.','.','.','7','.','.','9','.'],
+  ['.','9','.','.','.','.','5','.','.'],
+  ['6','.','5','.','.','1','.','.','3'],
+  ['5','.','.','.','.','.','7','2','.'],
+  ['.','.','6','.','.','.','.','.','1'],
+  ['.','.','.','.','.','7','.','3','.'],
 ]
 
-#sudokuSolve($board)
-getCandidates($board,1,2)
+sudokuSolve($board)

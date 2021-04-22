@@ -1,5 +1,4 @@
 def find_pairs(array, k)
-  # write your code here
   result = []
   map = {}
   array.each_with_index do |e,i|
