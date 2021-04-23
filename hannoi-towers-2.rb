@@ -1,5 +1,4 @@
 def hanoi_steps(number_of_discs)
-  # your code here
  move_disks(number_of_discs, 1, 2, 3)   
 end
 
