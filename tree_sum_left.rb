@@ -1,5 +1,4 @@
 def leftmost_nodes_sum(array)
-  # your code here
   sum_left(0,array,0)
 end
 
