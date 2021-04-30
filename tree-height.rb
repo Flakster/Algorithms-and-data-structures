@@ -14,7 +14,7 @@ def array_to_tree(arr, index = 0)
   node.left = array_to_tree(arr, 2 * index + 1 )
   node.right = array_to_tree(arr, 2 * index + 2 )
 
-  return node
+  node
 end
 
 def tree_height(node, h = 0)
